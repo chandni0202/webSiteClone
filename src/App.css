@@ -4,10 +4,11 @@
   min-height: 100vh;
   background-color: #000;
   overflow-x: hidden;
-  padding-left: 2em;
+  padding: 2em 4em;
   background-image: url(./placeholder.jpg);
   height: 100%;
   background-position: right;
+
   /* background-repeat: no-repeat; */
 }
 

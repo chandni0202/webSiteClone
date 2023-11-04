@@ -4,6 +4,9 @@
     display: flex;
     margin-right: 1.2em;
   }
+  .header-page{
+    display: flex;
+  }
   
   .navigation-header{
     display: flex;
