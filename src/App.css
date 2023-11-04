@@ -1,5 +1,14 @@
+@import url(./components/css/webPage.css);
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: #000;
+  overflow-x: hidden;
+  padding-left: 2em;
+  background-image: url(./placeholder.jpg);
+  height: 100%;
+  background-position: right;
+  /* background-repeat: no-repeat; */
 }
 
 .App-logo {
@@ -14,14 +23,19 @@
 }
 
 .App-header {
-  background-color: #000;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 2.8em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: auto;
+  font-size: 22px;
+  .home-header{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+  }
 }
 
 .App-link {
@@ -35,18 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.navigation-container{
-  color: #fff;
-  display: flex;
-}
-
-.navigation-header{
-  display: flex;
-}
-.navigation-container{
-  color: #fff;
-  display: flex;
-  
 }
