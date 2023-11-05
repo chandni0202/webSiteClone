@@ -1,14 +1,14 @@
 import React from "react";
 
-const Card2 = () => {
-    return (<><section className="section5">
+const Card2 = (props) => {
+    return (<><section className={props.isMob ? "section5-mweb" : "section5"}>
         <div><h1>ZeroTier Enterprise</h1>
             <div>For high-volume VPN, IoT, IIoT, edge, embedded networking, multi & hybrid cloud, Infrastructure as Code (IaC), and Commercial Use.</div>
             <button className="button-signup" style={{marginTop: "8px", marginLeft:0}}>Contact Sales</button>
         </div>
         <img src="https://dummyimage.com/200x100/000/fff" alt="placeholder"></img>
     </section>
-        <section className="section5">
+        <section className={props.isMob ? "section5-mweb" : "section5"}>
             <img src="https://dummyimage.com/200x100/000/fff" alt="placeholder"></img>
             <div style={{marginLeft: "3em"}}>
                 <h1>Service Providers</h1>

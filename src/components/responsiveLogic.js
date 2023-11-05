@@ -23,7 +23,7 @@ const UserAgent = (props) => {
         };
     }, []);
     if (isMob) {
-        return <><div className="header-page"> <button className="button-signup">Sign Up</button><NavigationBarMob item={props.item} /></div><div>
+        return <><div className="header-page"> <button className="button-signup">Sign Up</button><NavigationBarMob item={props.item} isMob={isMob} /></div><div>
         </div></>
     } else {
         return <><div className="header-page"><NavigationBar item={props.item} /></div><div><button className="button-signin">Login</button>

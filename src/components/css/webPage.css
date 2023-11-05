@@ -63,10 +63,10 @@
   }
   
   .bar {
-    width: 25px;
+    width: 27px;
     height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
+    background-color: yellow;
+    margin: 3px 0;
   }
   
   .menu {
@@ -166,8 +166,32 @@
       border-radius: 16px;
     }
   }
+  .tooltip-content-mweb{
+    display: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 16px;
+    white-space: nowrap;
+    z-index: 1;
+    padding-right: 5em;
+    margin-top: 10px;
+    >ul >li{
+      list-style-type: none;
+      padding: 0.5em 0em;
+    }
+    >ul >li:hover{
+      background-color: #000;
+      border-radius: 16px;
+    }
+  }
   
   .tooltip:hover .tooltip-content {
+    display: block;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .tooltip:hover .tooltip-content-mweb {
     display: block;
     top: 100%;
     left: 50%;
@@ -181,6 +205,7 @@
     border-width: 5px 5px 0;
     border-color: white transparent transparent transparent;
     margin-top: 15px;
+    display: block;
   }
   .section2{
     color: rgb(255, 255, 255);
@@ -194,9 +219,14 @@
     padding: 4em 2em;
     display: flex;
     flex-direction: column;
-    >div {
+    .section2-div {
       display: flex;
       justify-content: space-between;
+    }
+    .section2-div-mweb{
+      display: flex;
+      justify-content: space-between;
+     flex-direction: column;
     }
   }
   .section4{
@@ -211,12 +241,30 @@
     display: flex;
     padding: 2em;
   }
+  .section4-mweb{
+    background: #333;
+    margin: 2em auto;
+    width:80%;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    box-shadow: 1px solid;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+  }
   .tnc{
     display: flex;
     color: #fff;
     width:  40%;
     cursor: pointer;
     margin-top: 5em;
+  }
+  .tnc-mweb{
+    display: flex;
+    color: #fff;
+    cursor: pointer;
   }
 
   .tnc-span:hover{

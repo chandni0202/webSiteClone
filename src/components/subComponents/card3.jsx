@@ -1,11 +1,11 @@
 import React from "react";
 
-const Card3 = () => {
+const Card3 = (props) => {
     const onClickLi = () => window.location.href = "https://www.zerotier.com/";
     return (<><section className="section6">
         <h1>Pricing</h1>
         <h3>ZeroTier makes networking easy for everyone - anywhere.</h3>
-        <div className="section7-container">
+        <div className={props.isMob ? "section7-container-mweb" : "section7-container"}>
             <span className="section7">
                 <img src="icon.png" alt="icon"/>
                 <h1>Basic</h1>

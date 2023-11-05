@@ -1,11 +1,12 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = (props) => {
     const onClickLi = () => window.location.href = "https://www.zerotier.com/";
     return (<div>
-        <div className="footer-first-item">
+        <div className={props.isMob ? "footer-first-item-mweb" : "footer-first-item"}>
             <div className="footer-first-item-sub">
-                <div  onClick={onClickLi} style={{ fontSize: "24px", cursor: "pointer",  marginBottom: "8px"}}>
+                <div  onClick={onClickLi} 
+                style={{ fontSize: "24px", cursor: "pointer",  marginBottom: "8px"}}>
                 <img src="github.png" alt="istImage" width="3%" />zerotier</div>
                 <div>Securely Connecting The World's Devices.</div>
             </div>
@@ -39,7 +40,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <div style={{ display: "flex", color: "#fff" }}>
+        <div style={props.isMob? { display: "flex", color: "#fff", flexDirection: "column" } : { display: "flex", color: "#fff" }}>
             <div className="image-link"><div><img src="github.png" alt="istImage" width="5%" />
                 <img src="github.png" alt="istImage" width="5%" />
                 <img src="github.png" alt="istImage" width="5%" />
@@ -47,7 +48,7 @@ const Footer = () => {
                 <img src="github.png" alt="istImage" width="5%" /></div>
                 <div style={{marginTop: "1em"}}>© XXXX ZeroTier, Inc. All rights reserved.</div>
             </div>
-            <div className="tnc"><span className="tnc-span" style={{marginRight: "8px"}} onClick={onClickLi}>Terms</span><span className="tnc-span" onClick={onClickLi}>Privacy Policy</span></div>
+            <div className={props.isMob? "tnc-mweb" : "tnc"}><span className="tnc-span" style={{marginRight: "8px"}} onClick={onClickLi}>Terms</span><span className="tnc-span" onClick={onClickLi}>Privacy Policy</span></div>
         </div>
     </div>
     )

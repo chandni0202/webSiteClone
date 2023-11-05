@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import UserAgent from "./components/responsiveLogic";
 import Home from "./components/home";
+
 const arrayItems = [{
   name: "Features", url: "./features"
 },
@@ -28,7 +29,7 @@ function App() {
         };
     }, []);
   return (
-    <div className="App" id="App">
+    <div className={isMob ? "app-mobweb" : "App"} id="App">
       <header className="App-header">
         <a className="home-header" href="/">* ZEROTIER</a>
         <div className={isMob === true ? 'navigation-header-mob':'navigation-header'}>
